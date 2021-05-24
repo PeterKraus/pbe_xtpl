@@ -1,4 +1,4 @@
-# Extrapolating DFT towards the complete basis set limit: Lessons from PBE
+# Extrapolating DFT towards the complete basis set limit: Lessons from the PBE family of functionals
 ## Supplemental materials
 
 Author: Peter Kraus
