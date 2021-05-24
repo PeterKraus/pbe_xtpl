@@ -1,0 +1,135 @@
+{
+ "id": null,
+ "schema_name": "qcschema_output",
+ "schema_version": 1,
+ "molecule": {
+  "schema_name": "qcschema_molecule",
+  "schema_version": 2,
+  "validated": true,
+  "symbols": [
+   "Si",
+   "Cl",
+   "Cl",
+   "Cl",
+   "Cl"
+  ],
+  "geometry": [
+   -2.1009056590050734e-34,
+   0.0,
+   4.852222335942046e-18,
+   3.160278842539423,
+   9.675563422322516e-17,
+   2.2346546,
+   -3.160278842539423,
+   -9.675563422322516e-17,
+   2.2346546,
+   9.675563422322516e-17,
+   -3.160278842539423,
+   -2.2346546,
+   -9.675563422322516e-17,
+   3.160278842539423,
+   -2.2346546
+  ],
+  "name": "Cl4Si",
+  "molecular_charge": 0.0,
+  "molecular_multiplicity": 1,
+  "fix_com": false,
+  "fix_orientation": false,
+  "provenance": {
+   "creator": "QCElemental",
+   "version": "v0.16.0",
+   "routine": "qcelemental.molparse.from_schema"
+  }
+ },
+ "driver": "energy",
+ "model": {
+  "method": "pbe-d3bj",
+  "basis": "aug-cc-pvtz"
+ },
+ "keywords": {
+  "reference": "RKS",
+  "dft_spherical_points": 974,
+  "dft_radial_points": 150,
+  "guess": "SAP"
+ },
+ "protocols": {},
+ "extras": {
+  "qcvars": {
+   "2-BODY DISPERSION CORRECTION ENERGY": -0.00851966,
+   "CURRENT DIPOLE X": -7.901335214228836e-15,
+   "CURRENT DIPOLE Y": 7.901335214228836e-15,
+   "CURRENT DIPOLE Z": 5.788415431238444e-06,
+   "CURRENT ENERGY": -2129.706883437983,
+   "CURRENT REFERENCE ENERGY": -2129.706883437983,
+   "DFT FUNCTIONAL TOTAL ENERGY": -2129.698363777983,
+   "DFT TOTAL ENERGY": -2129.706883437983,
+   "DFT VV10 ENERGY": 0.0,
+   "DFT XC ENERGY": -133.02469416148435,
+   "DISPERSION CORRECTION ENERGY": -0.00851966,
+   "NUCLEAR REPULSION ENERGY": 520.3036905825448,
+   "ONE-ELECTRON ENERGY": -3979.672699485195,
+   "PBE-D3(BJ) DISPERSION CORRECTION ENERGY": -0.00851966,
+   "PCM POLARIZATION ENERGY": 0.0,
+   "PE ENERGY": 0.0,
+   "SCF DIPOLE X": -7.901335214228836e-15,
+   "SCF DIPOLE Y": 7.901335214228836e-15,
+   "SCF DIPOLE Z": 5.788415431238444e-06,
+   "SCF ITERATION ENERGY": -2129.706883437983,
+   "SCF ITERATIONS": 8.0,
+   "SCF TOTAL ENERGY": -2129.706883437983,
+   "TWO-ELECTRON ENERGY": 1462.6953392861515,
+   "XC GRID RADIAL POINTS": 150.0,
+   "XC GRID SPHERICAL POINTS": 974.0,
+   "XC GRID TOTAL POINTS": 702951.0,
+   "CURRENT DIPOLE": [
+    -3.1086244689504383e-15,
+    3.1086244689504383e-15,
+    2.2773378622886753e-06
+   ],
+   "SCF DIPOLE": [
+    -3.1086244689504383e-15,
+    3.1086244689504383e-15,
+    2.2773378622886753e-06
+   ]
+  }
+ },
+ "provenance": {
+  "creator": "Psi4",
+  "version": "1.4a2.dev923",
+  "routine": "psi4.schema_runner.run_qcschema",
+  "nthreads": 28,
+  "wall_time": 22.220556020736694,
+  "username": "kraus",
+  "hostname": "z045",
+  "cpu": "Intel(R) Xeon(R) CPU E5-2680 v4 @ 2.40GHz",
+  "memory": 120.0,
+  "qcengine_version": "v0.16.0"
+ },
+ "properties": {
+  "calcinfo_nbasis": 250,
+  "calcinfo_nmo": 250,
+  "calcinfo_nalpha": 41,
+  "calcinfo_nbeta": 41,
+  "calcinfo_natom": 5,
+  "nuclear_repulsion_energy": 520.3036905825448,
+  "return_energy": -2129.706883437983,
+  "scf_one_electron_energy": -3979.672699485195,
+  "scf_two_electron_energy": 1462.6953392861515,
+  "scf_xc_energy": -133.02469416148435,
+  "scf_dispersion_correction_energy": -0.00851966,
+  "scf_dipole_moment": [
+   -3.1086244689504383e-15,
+   3.1086244689504383e-15,
+   2.2773378622886753e-06
+  ],
+  "scf_total_energy": -2129.706883437983,
+  "scf_iterations": 8
+ },
+ "wavefunction": null,
+ "return_result": -2129.706883437983,
+ "stdout": "\n    -----------------------------------------------------------------------\n          Psi4: An Open-Source Ab Initio Electronic Structure Package\n                               Psi4 1.4a2.dev923 \n\n                         Git: Rev {master} 5de566e \n\n\n    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,\n    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,\n    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,\n    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,\n    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,\n    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,\n    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,\n    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,\n    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002\n\n                            Additional Code Authors\n    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,\n    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,\n    P. Verma, and M. H. Lechner\n\n             Previous Authors, Complete List of Code Contributors,\n                       and Citations for Specific Modules\n    https://github.com/psi4/psi4/blob/master/codemeta.json\n    https://github.com/psi4/psi4/graphs/contributors\n    http://psicode.org/psi4manual/master/introduction.html#citing-psifour\n\n    -----------------------------------------------------------------------\n\n\n    Psi4 started on: Saturday, 26 September 2020 07:13PM\n\n    Process ID: 14042\n    Host:       z045\n    PSIDATADIR: /group/f97/kraus/miniconda3/envs/psi4-1.4a2.dev923/share/psi4\n    Memory:     111.8 GiB\n    Threads:    28\n    \n  ==> Input QCSchema <==\n\n--------------------------------------------------------------------------\n{'driver': 'energy',\n 'extras': {},\n 'id': None,\n 'keywords': {'dft_radial_points': 150, 'dft_spherical_points': 974, 'guess': 'SAP', 'reference': 'RKS'},\n 'model': {'basis': 'aug-cc-pvtz', 'method': 'pbe-d3bj'},\n 'molecule': {'fix_com': False,\n              'fix_orientation': False,\n              'geometry': [0.0, 0.0, 0.0, 2.2346546, -2.2346546, 2.2346546, -2.2346546, 2.2346546, 2.2346546,\n                           -2.2346546, -2.2346546, -2.2346546, 2.2346546, 2.2346546, -2.2346546],\n              'molecular_charge': 0.0,\n              'molecular_multiplicity': 1,\n              'name': 'Cl4Si',\n              'provenance': {'creator': 'QCElemental',\n                             'routine': 'qcelemental.molparse.from_schema',\n                             'version': 'v0.16.0'},\n              'schema_name': 'qcschema_molecule',\n              'schema_version': 2,\n              'symbols': ['Si', 'Cl', 'Cl', 'Cl', 'Cl'],\n              'validated': True},\n 'protocols': {},\n 'provenance': {'creator': 'QCElemental', 'routine': 'qcelemental.models.results', 'version': 'v0.16.0'},\n 'schema_name': 'qcschema_input',\n 'schema_version': 1}\n--------------------------------------------------------------------------\n\nScratch directory: /tmp/tmp40phsoub_psi_scratch/\n\n*** tstart() called on z045\n*** at Sat Sep 26 19:13:38 2020\n\n   => Loading Basis Set <=\n\n    Name: AUG-CC-PVTZ\n    Role: ORBITAL\n    Keyword: BASIS\n    atoms 1   entry SI         line   742 file /group/f97/kraus/miniconda3/envs/psi4-1.4a2.dev923/share/psi4/basis/aug-cc-pvtz.gbs \n    atoms 2-5 entry CL         line   988 file /group/f97/kraus/miniconda3/envs/psi4-1.4a2.dev923/share/psi4/basis/aug-cc-pvtz.gbs \n\n   => PBE-D3(BJ): Empirical Dispersion <=\n\n    Grimme's -D3 (BJ-damping) Dispersion Correction\n    Grimme S.; Ehrlich S.; Goerigk L. (2011), J. Comput. Chem., 32: 1456\n\n        s6 =       1.000000\n        s8 =       0.787500\n        a1 =       0.428900\n        a2 =       4.440700\n\n\n         ---------------------------------------------------------\n                                   SCF\n               by Justin Turney, Rob Parrish, Andy Simmonett\n                          and Daniel G. A. Smith\n                              RKS Reference\n                       28 Threads, 114440 MiB Core\n         ---------------------------------------------------------\n\n  ==> Geometry <==\n\n    Molecular point group: c2v\n    Full point group: Td\n\n    Geometry (in Bohr), charge = 0, multiplicity = 1:\n\n       Center              X                  Y                   Z               Mass       \n    ------------   -----------------  -----------------  -----------------  -----------------\n         SI           0.000000000000     0.000000000000     0.000000000000    27.976926534650\n         CL           3.160278842539     0.000000000000     2.234654600000    34.968852682000\n         CL          -3.160278842539    -0.000000000000     2.234654600000    34.968852682000\n         CL           0.000000000000    -3.160278842539    -2.234654600000    34.968852682000\n         CL          -0.000000000000     3.160278842539    -2.234654600000    34.968852682000\n\n  Running in c2v symmetry.\n\n  Rotational constants: A =      0.04309  B =      0.04309  C =      0.04309 [cm^-1]\n  Rotational constants: A =   1291.88172  B =   1291.88172  C =   1291.88172 [MHz]\n  Nuclear repulsion =  520.303690582544846\n\n  Charge       = 0\n  Multiplicity = 1\n  Electrons    = 82\n  Nalpha       = 41\n  Nbeta        = 41\n\n  ==> Algorithm <==\n\n  SCF Algorithm Type is DF.\n  DIIS enabled.\n  MOM disabled.\n  Fractional occupation disabled.\n  Guess Type is SAP.\n  Energy threshold   = 1.00e-06\n  Density threshold  = 1.00e-06\n  Integral threshold = 0.00e+00\n\n  ==> Primary Basis <==\n\n  Basis Set: AUG-CC-PVTZ\n    Blend: AUG-CC-PVTZ\n    Number of shells: 80\n    Number of basis function: 250\n    Number of Cartesian functions: 295\n    Spherical Harmonics?: true\n    Max angular momentum: 3\n\n  ==> DFT Potential <==\n\n   => Composite Functional: PBE-D3BJ <= \n\n    PBE GGA Exchange-Correlation Functional\n\n    J.P. Perdew et. al., Phys. Rev. Lett., 77(18), 3865-3868, 1996\n\n\n    Deriv               =              1\n    GGA                 =           TRUE\n    Meta                =          FALSE\n\n    Exchange Hybrid     =          FALSE\n    MP2 Hybrid          =          FALSE\n\n   => Exchange Functionals <=\n\n    1.0000     XC_GGA_X_PBE\n\n   => Correlation Functionals <=\n\n    1.0000     XC_GGA_C_PBE\n\n   => LibXC Density Thresholds  <==\n\n    XC_GGA_C_PBE:  1.00E-12 \n    XC_GGA_X_PBE:  1.00E-32 \n\n   => Molecular Quadrature <=\n\n    Radial Scheme          =       TREUTLER\n    Pruning Scheme         =           NONE\n    Nuclear Scheme         =       TREUTLER\n\n    BS radius alpha        =              1\n    Pruning alpha          =              1\n    Radial Points          =            150\n    Spherical Points       =            974\n    Total Points           =         702951\n    Total Blocks           =           5148\n    Max Points             =            256\n    Max Functions          =            250\n    Weights Tolerance      =       1.00E-15\n\n   => Loading Basis Set <=\n\n    Name: (AUG-CC-PVTZ AUX)\n    Role: JKFIT\n    Keyword: DF_BASIS_SCF\n    atoms 1   entry SI         line   558 file /group/f97/kraus/miniconda3/envs/psi4-1.4a2.dev923/share/psi4/basis/aug-cc-pvtz-jkfit.gbs \n    atoms 2-5 entry CL         line   816 file /group/f97/kraus/miniconda3/envs/psi4-1.4a2.dev923/share/psi4/basis/aug-cc-pvtz-jkfit.gbs \n\n  ==> Integral Setup <==\n\n  DFHelper Memory: AOs need 0.370 GiB; user supplied 79.753 GiB. Using in-core AOs.\n\n  ==> MemDFJK: Density-Fitted J/K Matrices <==\n\n    J tasked:                   Yes\n    K tasked:                    No\n    wK tasked:                   No\n    OpenMP threads:              28\n    Memory [MiB]:             81666\n    Algorithm:                 Core\n    Schwarz Cutoff:           1E-12\n    Mask sparsity (%):       0.0000\n    Fitting Condition:        1E-10\n\n   => Auxiliary Basis Set <=\n\n  Basis Set: (AUG-CC-PVTZ AUX)\n    Blend: AUG-CC-PVTZ-JKFIT\n    Number of shells: 210\n    Number of basis function: 730\n    Number of Cartesian functions: 900\n    Spherical Harmonics?: true\n    Max angular momentum: 4\n\n  Cached 100.0% of DFT collocation blocks in 4.066 [GiB].\n\n  Minimum eigenvalue in the overlap matrix is 1.1816498085E-04.\n  Reciprocal condition number of the overlap matrix is 1.6136894269E-05.\n    Using symmetric orthogonalization.\n\n  ==> Pre-Iterations <==\n\n  SCF Guess: Superposition of Atomic Potentials (doi:10.1021/acs.jctc.8b01089).\n\n  ==> SAP guess <==\n\n   => Molecular Quadrature <=\n\n    Radial Scheme          =       TREUTLER\n    Pruning Scheme         =           NONE\n    Nuclear Scheme         =       TREUTLER\n\n    BS radius alpha        =              1\n    Pruning alpha          =              1\n    Radial Points          =            150\n    Spherical Points       =            974\n    Total Points           =         702951\n    Total Blocks           =           5148\n    Max Points             =            256\n    Max Functions          =            250\n    Weights Tolerance      =       1.00E-15\n\n   -------------------------------------------------------\n    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc\n   -------------------------------------------------------\n     A1        87      87      17      17      17       0\n     A2        39      39       4       4       4       0\n     B1        62      62      10      10      10       0\n     B2        62      62      10      10      10       0\n   -------------------------------------------------------\n    Total     250     250      41      41      41       0\n   -------------------------------------------------------\n\n  ==> Iterations <==\n\n                           Total Energy        Delta E     RMS |[F,P]|\n\n   @DF-RKS iter   1: -2128.61992332797217   -2.12862e+03   1.10422e-02 DIIS\n   @DF-RKS iter   2: -2126.46832452197577    2.15160e+00   1.71503e-02 DIIS\n   @DF-RKS iter   3: -2129.70224544964549   -3.23392e+00   7.51000e-04 DIIS\n   @DF-RKS iter   4: -2129.70499559810696   -2.75015e-03   4.57012e-04 DIIS\n   @DF-RKS iter   5: -2129.70678776667182   -1.79217e-03   1.20349e-04 DIIS\n   @DF-RKS iter   6: -2129.70688250676085   -9.47401e-05   1.33382e-05 DIIS\n   @DF-RKS iter   7: -2129.70688329647919   -7.89718e-07   4.52505e-06 DIIS\n   @DF-RKS iter   8: -2129.70688343798292   -1.41504e-07   5.04793e-07 DIIS\n  Energy and wave function converged.\n\n\n  ==> Post-Iterations <==\n\n    Orbital Energies [Eh]\n    ---------------------\n\n    Doubly Occupied:                                                      \n\n       1A1  -100.728026     1B2  -100.728017     2A1  -100.728017  \n       1B1  -100.728017     3A1   -65.572438     4A1    -9.212130  \n       2B2    -9.212125     5A1    -9.212125     2B1    -9.212125  \n       6A1    -7.034963     3B2    -7.034962     7A1    -7.034962  \n       3B1    -7.034962     8A1    -7.028086     1A2    -7.028086  \n       4B1    -7.028085     9A1    -7.028085     4B2    -7.028085  \n       5B2    -7.028084     5B1    -7.028084     2A2    -7.028084  \n      10A1    -5.188074     6B1    -3.599531    11A1    -3.599531  \n       6B2    -3.599531    12A1    -0.818389     7B2    -0.775401  \n      13A1    -0.775401     7B1    -0.775401    14A1    -0.507675  \n       8B2    -0.408875    15A1    -0.408875     8B1    -0.408875  \n      16A1    -0.336918     3A2    -0.336918     9B2    -0.328815  \n      17A1    -0.328815     9B1    -0.328815    10B2    -0.301190  \n       4A2    -0.301190    10B1    -0.301190  \n\n    Virtual:                                                              \n\n      18A1    -0.079191    11B2    -0.025362    11B1    -0.025362  \n      19A1    -0.025362    20A1    -0.013726    21A1     0.014130  \n      12B2     0.014130    12B1     0.014130     5A2     0.050137  \n      22A1     0.050137    13B1     0.053659    23A1     0.053659  \n      13B2     0.053659    24A1     0.072796    14B2     0.097720  \n       6A2     0.097720    14B1     0.097720    25A1     0.106215  \n      15B1     0.106215    15B2     0.106215    26A1     0.110897  \n       7A2     0.110897    27A1     0.128721    16B2     0.128721  \n      16B1     0.128721    28A1     0.136521    17B2     0.136521  \n      17B1     0.136521    29A1     0.157905    30A1     0.204224  \n       8A2     0.204224    31A1     0.214327    18B2     0.214327  \n      18B1     0.214327    19B1     0.229856    19B2     0.229856  \n       9A2     0.229856    32A1     0.276288    20B2     0.276288  \n      20B1     0.276288    33A1     0.277885    34A1     0.283549  \n      10A2     0.283550    21B2     0.313489    11A2     0.313489  \n      21B1     0.313489    35A1     0.370532    22B2     0.370532  \n      22B1     0.370532    23B1     0.419097    36A1     0.419097  \n      23B2     0.419097    37A1     0.421023    38A1     0.444746  \n      12A2     0.444746    39A1     0.469288    24B2     0.469289  \n      24B1     0.469289    25B1     0.519063    25B2     0.519063  \n      13A2     0.519063    26B1     0.556249    26B2     0.556249  \n      40A1     0.556249    41A1     0.558742    27B1     0.593352  \n      27B2     0.593352    42A1     0.593352    28B1     0.614929  \n      28B2     0.614929    14A2     0.614929    43A1     0.617061  \n      15A2     0.617061    44A1     0.672613    29B1     0.680098  \n      29B2     0.680098    16A2     0.680099    45A1     0.714723  \n      17A2     0.714723    46A1     0.721828    30B1     0.721828  \n      30B2     0.721828    31B1     0.733646    18A2     0.733646  \n      31B2     0.733647    47A1     0.743452    32B1     0.755725  \n      48A1     0.755725    32B2     0.755725    49A1     0.757965  \n      33B2     0.757965    33B1     0.757965    50A1     0.799116  \n      19A2     0.799116    51A1     0.892049    34B1     0.892049  \n      34B2     0.892049    20A2     1.000641    35B2     1.021652  \n      52A1     1.021652    35B1     1.021652    21A2     1.028892  \n      53A1     1.028892    36B1     1.067566    22A2     1.067566  \n      36B2     1.067566    37B2     1.102570    54A1     1.102570  \n      37B1     1.102570    55A1     1.140544    56A1     1.214901  \n      38B2     1.214901    38B1     1.214901    39B1     1.255194  \n      39B2     1.255194    23A2     1.255194    40B2     1.267730  \n      40B1     1.267730    57A1     1.267730    58A1     1.318922  \n      24A2     1.320126    59A1     1.320127    41B1     1.342566  \n      41B2     1.342566    25A2     1.342566    60A1     1.456204  \n      42B1     1.456204    42B2     1.456204    26A2     1.465035  \n      61A1     1.465035    62A1     1.512625    43B1     1.604485  \n      43B2     1.604486    63A1     1.604486    27A2     1.651426  \n      44B1     1.651426    44B2     1.651426    64A1     1.661890  \n      45B2     1.661890    45B1     1.661891    65A1     1.703234  \n      66A1     2.119464    28A2     2.119464    46B1     2.128749  \n      46B2     2.128749    29A2     2.128749    47B1     2.198453  \n      67A1     2.198453    47B2     2.198454    48B2     2.238842  \n      30A2     2.238842    48B1     2.238842    49B1     2.277436  \n      68A1     2.277436    49B2     2.277436    69A1     2.281855  \n      50B2     2.281855    50B1     2.281855    70A1     2.288932  \n      31A2     2.288932    71A1     2.295870    51B2     2.368128  \n      51B1     2.368128    32A2     2.368128    72A1     2.516152  \n      52B2     2.516152    52B1     2.516152    73A1     2.538397  \n      53B2     2.597213    53B1     2.597213    74A1     2.597214  \n      33A2     2.609880    75A1     2.609880    34A2     2.681116  \n      76A1     2.694451    54B2     2.694451    54B1     2.694451  \n      55B1     2.716786    55B2     2.716786    35A2     2.716787  \n      77A1     2.738734    36A2     2.738735    78A1     2.763017  \n      56B2     2.809042    79A1     2.809042    56B1     2.809042  \n      57B1     2.868826    80A1     2.868826    57B2     2.868827  \n      58B1     2.901124    37A2     2.901124    58B2     2.901124  \n      59B1     2.933909    81A1     2.933909    59B2     2.933909  \n      38A2     2.941419    82A1     2.941419    60B2     3.058906  \n      60B1     3.058906    39A2     3.058906    83A1     3.094829  \n      61B1     3.519141    84A1     3.519141    61B2     3.519142  \n      85A1     5.899022    62B2     5.987364    86A1     5.987364  \n      62B1     5.987365    87A1     6.818338  \n\n    Final Occupation by Irrep:\n             A1    A2    B1    B2 \n    DOCC [    17,    4,   10,   10 ]\n\n  @DF-RKS Final Energy: -2129.70688343798292\n\n   => Energetics <=\n\n    Nuclear Repulsion Energy =            520.3036905825448457\n    One-Electron Energy =               -3979.6726994851951531\n    Two-Electron Energy =                1462.6953392861514658\n    DFT Exchange-Correlation Energy =    -133.0246941614843479\n    Empirical Dispersion Energy =          -0.0085196600000000\n    VV10 Nonlocal Energy =                  0.0000000000000000\n    Total Energy =                      -2129.7068834379829241\n\nComputation Completed\n\n\nProperties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]\n\nProperties computed using the SCF density matrix\n\n  Nuclear Dipole Moment: [e a0]\n     X:    -0.0000      Y:     0.0000      Z:    -0.0000\n\n  Electronic Dipole Moment: [e a0]\n     X:     0.0000      Y:     0.0000      Z:     0.0000\n\n  Dipole Moment: [e a0]\n     X:    -0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000\n\n  Dipole Moment: [D]\n     X:    -0.0000      Y:     0.0000      Z:     0.0000     Total:     0.0000\n\n\n*** tstop() called on z045 at Sat Sep 26 19:13:54 2020\nModule time:\n\tuser time   =     174.86 seconds =       2.91 minutes\n\tsystem time =      20.50 seconds =       0.34 minutes\n\ttotal time  =         16 seconds =       0.27 minutes\nTotal time:\n\tuser time   =     174.86 seconds =       2.91 minutes\n\tsystem time =      20.50 seconds =       0.34 minutes\n\ttotal time  =         16 seconds =       0.27 minutes\n\n    Psi4 stopped on: Saturday, 26 September 2020 07:13PM\n    Psi4 wall time for execution: 0:00:15.25\n\n*** Psi4 exiting successfully. Buy a developer a beer!\n",
+ "stderr": null,
+ "success": true,
+ "error": null,
+ "tag": "pbe-d3bj aug-cc-pvtz G2RC_67"
+}
