@@ -71,8 +71,27 @@ def getFuncPars(functional):
     else:
         raise ValueError
         
-def prettifyBasis(bname):
-    return bname.replace("q","$X$").replace("3","$N$").replace("5", "$X$")
+def prettifyBasis(bname, replace = True):
+    if "cc" in bname:
+        bname = bname.replace("v", "V").replace("z", "Z")
+        bname = bname.replace("wc", "wC")
+    if "def2" in bname:
+        bname = bname.replace("z", "Z").replace("v", "V")
+        bname = bname.replace("pd", "PD").replace("p", "P")
+    if "zapa" in bname:
+        bname = bname.replace("zapa", "ZaPa")
+        bname = bname.replace("cv", "CV")
+    if "jorge" in bname:
+        bname = bname.replace("zp", "ZP")
+        bname = bname.replace("a", "A")
+    if "X" in bname and "$X$" not in bname:
+        bname = bname.replace("X", "$X$")
+    if "N" in bname and "$N$" not in bname:
+        bname = bname.replace("N", "$N$")
+    if replace:
+        return bname.replace("q","$X$").replace("3","$N$").replace("5", "$X$")
+    else:
+        return bname.replace("-s", "-S").replace("st","ST").replace("-t", "-T").replace("-q","-Q")
 
 def prettifyFunc(fname):
     fname = fname.upper()
@@ -81,5 +100,7 @@ def prettifyFunc(fname):
     if fname.startswith("REV"):
         fname = "rev" + fname[3:]
     fname = fname.replace("D3BJ", "D3(BJ)")
-    fname = fname.replace("-DH-", "DH-")
+    if "D3" in fname and "D3(BJ)" not in fname:
+        fname = fname.replace("D3", "D3(0)")
+    fname = fname.replace("M062", "M06-2").replace("M052", "M05-2")
     return fname
